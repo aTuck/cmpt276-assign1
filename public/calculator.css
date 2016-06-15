@@ -48,7 +48,7 @@ th, td {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 50px auto 50px auto;
 }
 
 #wrapper {
