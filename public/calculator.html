@@ -1,0 +1,114 @@
+<html>
+
+<head>
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <script type="text/javascript" src="calculator.js"></script>
+</head>
+
+<div id="casing">
+<body>
+  <div id="wrapper">
+    <h1> Grade Calculator </h1>
+      <div id="tablewrapper">
+        <h2>Activities</h2>
+        <p> Give grades to the numeric activities </p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Short Name</th>
+            <th>Grade</th>
+            <th>Percentage</th>
+            <th>Letter Grade</th>
+          </tr>
+          <tr>
+            <td>Activity 1</td>
+            <td>A1</td>
+            <td>
+              <div class="formWrap">
+                <input type="number" id="A1mark" min="0" max="1000" onchange="a1CalculateTotal()"
+                autocomplete="off" step="0.1">
+              </div>
+              <div class="formWrap">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+              <div class="formWrap">
+                <input type="number" id="A1total" min="1" max="1000" onchange="a1CalculateTotal()"
+                autocomplete="off" step="0.1">
+              </div>
+            </td>
+            <td id="a1">&nbsp;</td>
+            <td id="a1grade">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Activity 2</td>
+            <td>A2</td>
+              <td>
+                <div class="formWrap">
+                  <input type="number" id="A2mark" min="0" max="1000" onchange="a2CalculateTotal()"
+                  autocomplete="off" step="0.1">
+                </div>
+                <div class="formWrap">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+                <div class="formWrap">
+                  <input type="number" id="A2total" min="1" max="1000" onchange="a2CalculateTotal()"
+                  autocomplete="off" step="0.1">
+                </div>
+              </td>
+            <td id="a2">&nbsp;</td>
+            <td id="a2grade">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Activity 3</td>
+            <td>A3</td>
+            <td>
+              <div class="formWrap">
+                <input type="number" id="A3mark" min="0" max="1000" onchange="a3CalculateTotal()"
+                autocomplete="off" step="0.1">
+              </div>
+              <div class="formWrap">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+              <div class="formWrap">
+                <input type="number" id="A3total" min="1" max="1000" onchange="a3CalculateTotal()"
+                autocomplete="off" step="0.1">
+              </div>
+            </td>
+            <td id="a3">&nbsp;</td>
+            <td id="a3grade">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Activity 4</td>
+            <td>A4</td>
+            <td>
+              <div class="formWrap">
+                <input type="number" id="A4mark" min="0" max="1000" onchange="a4CalculateTotal()"
+                autocomplete="off" step="0.1">
+              </div>
+              <div class="formWrap">&nbsp;&nbsp;/&nbsp;&nbsp;</div>
+              <div class="formWrap">
+                <input type="number" id="A4total" min="1" max="1000" onchange="a4CalculateTotal()"
+                autocomplete="off" step="0.1">
+              </div>
+            </td>
+            <td id="a4">&nbsp;</td>
+            <td id="a4grade">&nbsp;</td>
+          </tr>
+          <tr>
+            <td id="total"><b>TOTAL</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td id="button-output">&nbsp;</td>
+            <td id="total-grade">&nbsp;</td>
+          </tr>
+        </table>
+        <div class="columnWrapper">
+          <div class="button">
+            <input type="button" id="mean" value="MEAN" onclick="calculateMean()"></input>
+            <input type="button" id="average" value="AVERAGE" onclick="calculateAverage()"></input>
+          </div>
+          <div class="warning" id="warning">
+            Please fill in all the empty fields
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</div>
+
+</html>

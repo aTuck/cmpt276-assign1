@@ -1,0 +1,21 @@
+== README
+
+Features I added:
+  * Animated buttons on hover and click, also changes cursor
+  * Clearing of old calculated totals/grades and mean/average when changing input
+  * Prevention of any input other than positive integers
+    - hidden spin buttons
+    - red box shadow if invalid input
+    - allowed one decimal place for half marks
+    - two decimals is invalid input
+    - use of min/max properties
+  * A warning message when trying to calculate average/mean with blank
+    inputs present (took a while to figure out proper inline-block setup)
+    - animates fading in and fading out of warning message when a button
+      is pressed and all inputs are valid
+    - warning message flashes if already visible and button is pressed
+      with invalid inputs present (css animation)
+  * A letter grade column to show what letter grade a given percentage
+    on an assignment would yield
+  * Whole page remains same size without weird scaling issues when
+    dragging window size (purpose of #casing div)
